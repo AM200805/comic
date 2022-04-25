@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+  
+  body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    height: 100vh;
+    background: black;
+  }
+
+  .border{
+    border: black 3px solid;
+    padding: 10px;
+    background-color: aquamarine;
+  }
+
+  img{
+    width: 40vmin;
+    aspect-ratio: 0.75;
+    border: 0.5vmin solid;
+    border-radius: 0.33vmin;
+    overflow: hidden;
+  }
+  
+  article {
+    --c: #ca7;
+    --s: 30vmin;
+    display: flex;
+    gap: 1vmin;
+    font-family: 'Comic Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+  }
+  
+  .box {
+    width: 40vmin;
+    aspect-ratio: 0.75;
+    border: 0.5vmin solid;
+    border-radius: 0.33vmin;
+    overflow: hidden;
+    background: linear-gradient(#c9ca, #c9c0 80%);
+    position: relative;
+  }
+  
+  .box div {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .box:nth-child(2) .safari-bubble {
+    top: 0;
+    width: 100%;
+    border-radius: 80% / 0 0 60% 50%;
+    padding: 2vmin 2vmin 3vmin 2vmin;
+  }
+  
+  .box:nth-child(2) .safari-bubble::before {
+    display: none;
+  }
